@@ -1,6 +1,6 @@
 {
-  "name": "capacitor-jailbreak-root-detection",
-  "version": "1.0.0",
+  "name": "@evehr/capacitor-jailbreak-root-detection",
+  "version": "4.0.0",
   "description": "Jailbreak Root detection plugin for capacitor.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -11,7 +11,7 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "CapacitorJailbreakRootDetection.podspec"
+    "EvehrCapacitorJailbreakRootDetection.podspec"
   ],
   "author": "EveHR",
   "license": "MIT",

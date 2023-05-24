@@ -16,7 +16,7 @@
     "@capacitor/core": "latest",
     "@capacitor/camera": "latest",
     "@capacitor/splash-screen": "latest",
-    "capacitor-jailbreak-root-detection": "file:..",
+    "@evehr/capacitor-jailbreak-root-detection": "file:..",
     "@capacitor/ios": "^4.0.0",
     "@capacitor/android": "^4.0.0"
   },

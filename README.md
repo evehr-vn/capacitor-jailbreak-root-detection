@@ -1,11 +1,11 @@
-# capacitor-jailbreak-root-detection
+# @evehr/capacitor-jailbreak-root-detection
 
 Jailbreak Root detection plugin for capacitor.
 
 ## Install
 
 ```bash
-npm install capacitor-jailbreak-root-detection
+npm install @evehr/capacitor-jailbreak-root-detection
 npx cap sync
 ```
 
