@@ -1,13 +1,24 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { CapacitorJailbreakRootDetectionPlugin } from './definitions';
+import type { CapacitorJailbreakRootDetectionPlugin, JailbreakRootResult } from './definitions';
 
 export class CapacitorJailbreakRootDetectionWeb
   extends WebPlugin
   implements CapacitorJailbreakRootDetectionPlugin
 {
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
+  async isJailbrokenOrRooted(): Promise<JailbreakRootResult> {
+    return {
+      result: false,
+    };
+  }
+  async isSimulator(): Promise<JailbreakRootResult> {
+    return {
+      result: false,
+    };
+  }
+  async isDebuggedMode(): Promise<JailbreakRootResult> {
+    return {
+      result: false,
+    };
   }
 }

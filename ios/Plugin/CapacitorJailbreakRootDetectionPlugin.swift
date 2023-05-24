@@ -9,10 +9,21 @@ import Capacitor
 public class CapacitorJailbreakRootDetectionPlugin: CAPPlugin {
     private let implementation = CapacitorJailbreakRootDetection()
 
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
+    @objc func isJailbrokenOrRooted(_ call: CAPPluginCall) {
         call.resolve([
-            "value": implementation.echo(value)
+            "result": UIDevice.current.isJailBroken
+        ])
+    }
+
+    @objc func isSimulator(_ call: CAPPluginCall) {
+        call.resolve([
+            "result": UIDevice.current.isSimulator
+        ])
+    }
+    
+    @objc func isDebuggedMode(_ call: CAPPluginCall) {
+        call.resolve([
+            "result": UIDevice.current.isDebuggedMode
         ])
     }
 }
