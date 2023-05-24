@@ -51,4 +51,16 @@ public class CapacitorJailbreakRootDetectionPlugin extends Plugin {
         ret.put("result", implementation.isDebuggedMode(result));
         call.resolve(ret);
     }
+
+    @PluginMethod
+    public void exitApp(PluginCall call) {
+        unsetAppListeners();
+        call.resolve();
+        getBridge().getActivity().finish();
+    }
+
+    private void unsetAppListeners() {
+        bridge.getApp().setStatusChangeListener(null);
+        bridge.getApp().setAppRestoredListener(null);
+    }
 }

@@ -16,6 +16,7 @@ npx cap sync
 * [`isJailbrokenOrRooted()`](#isjailbrokenorrooted)
 * [`isSimulator()`](#issimulator)
 * [`isDebuggedMode()`](#isdebuggedmode)
+* [`exitApp()`](#exitapp)
 * [Interfaces](#interfaces)
 
 </docgen-index>
@@ -52,6 +53,15 @@ isDebuggedMode() => Promise<JailbreakRootResult>
 ```
 
 **Returns:** <code>Promise&lt;<a href="#jailbreakrootresult">JailbreakRootResult</a>&gt;</code>
+
+--------------------
+
+
+### exitApp()
+
+```typescript
+exitApp() => void
+```
 
 --------------------
 

@@ -1,5 +1,6 @@
 import Foundation
 import Capacitor
+import UIKit
 
 /**
  * Please read the Capacitor iOS Plugin Development Guide
@@ -25,5 +26,12 @@ public class CapacitorJailbreakRootDetectionPlugin: CAPPlugin {
         call.resolve([
             "result": UIDevice.current.isDebuggedMode
         ])
+    }
+    
+    @objc func exitApp(_ call: CAPPluginCall) {
+        UIControl().sendAction(#selector(NSXPCConnection.suspend), to: UIApplication.shared, for: nil)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            exit(EXIT_SUCCESS)
+        }
     }
 }

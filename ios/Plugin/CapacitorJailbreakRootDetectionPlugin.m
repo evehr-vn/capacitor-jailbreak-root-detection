@@ -7,4 +7,5 @@ CAP_PLUGIN(CapacitorJailbreakRootDetectionPlugin, "CapacitorJailbreakRootDetecti
            CAP_PLUGIN_METHOD(isJailbrokenOrRooted, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(isSimulator, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(isDebuggedMode, CAPPluginReturnPromise);
+           CAP_PLUGIN_METHOD(exitApp, CAPPluginReturnNone);
 )

@@ -6,6 +6,10 @@ export class CapacitorJailbreakRootDetectionWeb
   extends WebPlugin
   implements CapacitorJailbreakRootDetectionPlugin
 {
+  exitApp(): void {
+    // Do Nothing
+  }
+
   async isJailbrokenOrRooted(): Promise<JailbreakRootResult> {
     return {
       result: false,

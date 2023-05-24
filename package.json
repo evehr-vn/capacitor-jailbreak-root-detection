@@ -1,6 +1,6 @@
 {
   "name": "@evehr/capacitor-jailbreak-root-detection",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Jailbreak Root detection plugin for capacitor.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
